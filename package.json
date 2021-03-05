@@ -1,0 +1,41 @@
+{
+  "name": "aim",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "css-loader": "4",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "findup-sync": "^4.0.0",
+    "mongoose": "^5.11.17",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.8.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "import-local": "^3.0.2",
+    "nodemon": "^2.0.6",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode development --hot --port 3000",
+    "build": "webpack --mode production",
+    "building": "webpack --mode development --watch",
+    "server": "nodemon back/server.js"
+  }
+}

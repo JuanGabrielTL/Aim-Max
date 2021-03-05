@@ -1,0 +1,1188 @@
+/* Base */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    min-height: 100%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    max-width: 100vw;
+    margin: auto;
+}
+img,video{
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* Tools */
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.wrap-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap-r{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+
+/* Home */
+.menu{
+    background-color: #0E1420;
+}
+.cont-menu{
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+.cont-menu p{
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin: 0 2rem;
+    color: white;
+    text-decoration: none;
+}
+.hero{
+    background-color: #172333;
+}
+.cont-hero h1{
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: white;
+    max-width: 70%;
+    margin: 0;
+}
+.cont-hero p{
+    font-weight: 400;
+    font-size: 1.7rem;
+    max-width: 75%;
+    color: #888D93;
+    margin: 3rem 0;
+}
+.cont-hero button{
+    color: #172333;
+    background-color: #27DDF2;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+}
+.games{
+    background-color: #0E1420;
+}
+.cont-games hr{
+    height: 9.5rem;
+}
+.cont-games img{
+    transition: 0.7s ease;
+}
+.cont-games img:hover{
+    filter: brightness(2);
+    animation: ud 2s ease infinite;
+}
+@keyframes ud{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(6px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(6px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* Skills */
+.skills{
+    background-color: #172333;
+}
+.skills h2{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 4rem 0;
+}
+.skills span{
+    color: #27DDF2;
+}
+.skill-card{
+    width: 25rem;
+    height: 20rem;
+    background-color: #0E1420;
+    justify-content: space-evenly;
+    border-top: 10px solid #27DDF2;
+    cursor: pointer;
+}
+.skill-card.on{
+    background-color: #243245;
+    height: 22rem;
+    padding-bottom: 2rem;
+}
+.skill-card h4{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.box-skills{
+    justify-content: space-between;
+    align-items: flex-start;  
+}
+.info-skills{
+    background-color: #243245;
+    padding: 3rem;
+}
+.info-skills h3{
+    color: white;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.info-skills p{
+    color: #888D93;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin: 3rem 0;
+}
+.divider{
+    margin: 3rem 0;
+}
+.video-general{
+    background-color: #243245;
+    padding: 3rem;
+}
+.video-general iframe{
+    width: 100%;
+    height: 60rem;
+}
+.video-general h3{
+    color: white;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+/* Guides */
+.guides{
+    height: 100vh;
+    background-size: cover;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.guides.valorant{
+    background-image: url(../images/valorantBack.jpg);
+}
+.guides.overwatch{
+    background-image: url(../images/overwatchBack.png);
+    background-position: center;
+}
+.guides.apex{
+    background-image: url(../images/apexBack.png);
+}
+.guides.csgo{
+    background-image: url(../images/csgoBack.jpg);
+}
+.guides.fortnite{
+    background-image: url(../images/fortniteBack.jpg);
+    background-position: center center;
+}
+.guides.cod{
+    background-image: url(../images/codBack.jpg);
+    background-position: center;
+}
+.guides.six{
+    background-image: url(../images/sixBack.png);
+    background-position: center;
+}
+.purple{
+    background: rgba(28, 22, 70, 0.8);
+    height: 100vh;
+    width: 27rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.left-guides{
+    z-index: 1;
+}
+.left-guides p{
+    color: #888D93;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0 0 1.5rem 4rem;
+}
+.cont-guides{
+    justify-content: space-between;
+}
+.guides-card{
+    width: 30rem;
+    height: 15rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    border-radius: 12px;
+    border: 2px solid #888D93;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s ease;
+    animation: entrance 0.9s ease;
+}
+@keyframes entrance{
+    from{
+        transform: translateX(-100vw);
+    }to{
+        transform: translateX(0px);
+    }
+}
+.guides-card.check{
+    border: 2px solid #FB7C03;
+    margin-left: 3rem;
+}
+.guides-card.valorant{
+    background-image: url(../images/valorantMini.jpg);
+}
+.guides-card.valorant.on{
+    background-image: url(../images/valorantMiniOn.jpg);
+}
+.guides-card.overwatch{
+    background-image: url(../images/overwatchMini.jpg);
+}
+.guides-card.overwatch.on{
+    background-image: url(../images/overwatchMiniOn.jpg);
+}
+.guides-card.apex{
+    background-image: url(../images/apexMini.jpg);
+}
+.guides-card.apex.on{
+    background-image: url(../images/apexMiniOn.jpg);
+}
+.guides-card.csgo{
+    background-image: url(../images/csgoMini.jpg);
+}
+.guides-card.csgo.on{
+    background-image: url(../images/csgoMiniOn.jpg);
+}
+.guides-card.fortnite{
+    background-image: url(../images/fortniteMini.jpg);
+}
+.guides-card.fortnite.on{
+    background-image: url(../images/fortniteMiniOn.jpg);
+}
+.guides-card.cod{
+    background-image: url(../images/codMini.jpg);
+}
+.guides-card.cod.on{
+    background-image: url(../images/codMiniOn.jpg);
+}
+.guides-card.six{
+    background-image: url(../images/sixMini.jpg);
+}
+.guides-card.six.on{
+    background-image: url(../images/sixMiniOn.jpg);
+}
+.slider-card{
+    margin-left: 4rem;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 650px;
+    width: 350px;
+}
+.slider-card::-webkit-scrollbar{
+    width: 0px;
+}
+.right-guides{
+    margin-right: 4rem;
+}
+.right-guides h3{
+    font-weight: 700;
+    font-size: 4.8rem;
+    color: white;
+    text-align: right;
+}
+.right-guides span{
+    color: #FB7C03;
+}
+.right-guides p{
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: white;
+    text-align: right;
+    margin: 1.5rem 0 3rem 0;
+}
+.right-guides button{
+    color: white;
+    background-color: #FB7C03;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 3rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+    outline: none;
+    cursor: pointer;
+    float: right;
+}
+.info-skills iframe{
+    width: 100%;
+    height: 60rem;
+}
+
+/* Routine */
+.routine-1{
+    background-color: #172333;
+    padding: 4rem 0;
+}
+.cont-routine-1{
+    justify-content: space-between;
+}
+.cont-routine-1 img{
+    animation: moves 1.5s ease;
+}
+@keyframes moves{
+    from{
+        transform: translateX(-100vw);
+    }to{
+        transform: translateX(0px);
+    }
+}
+.cont-routine-1 h2{
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: white;
+    text-align: right;
+}
+.cont-routine-1 p{
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #888D93;
+    text-align: right;
+    margin-top: 1.5rem;
+}
+.group{
+    max-width: 50%;
+}
+.routine-2{
+    background-color: #E6E6EE;
+    padding: 4rem 0;
+}
+.cont-routine-2 h2{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #172333;
+}
+.cont-routine-2 p{
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #172333;
+}
+.pre-title{
+    margin: 3rem 0;
+}
+.routine-3{
+    background-color: #172333;
+    padding: 4rem 0;
+}
+.cont-routine-3 h2{
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+}
+.cont-routine-3 p{
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: white;
+}
+.line-routine{
+    justify-content: space-around;
+    margin: 4rem 0;
+}
+.routine-4{
+    background-color: #E6E6EE;
+    padding: 4rem 0;
+}
+.cont-routine-4 h2{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #172333;
+}
+.cont-routine-4 p{
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #172333;
+}
+.columns{
+    justify-content: space-between;
+}
+.columns p{
+    max-width: 48%;
+}
+.list{
+    margin-left: 2.5rem;
+}
+
+/* Footer */
+.footer{
+    background-color: #172333;
+    padding: 3rem 0;
+    justify-content: space-between;
+}
+.cont-footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.footer h5{
+    font-size: 1.5rem;
+    color: #888D93;
+}
+.footer-services{
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+.footer-services h5{
+    margin: 0 2rem;
+}
+.footer-media{
+    justify-content: center;
+}
+.footer-media img{
+    margin: 0 1rem;
+}
+
+/* Exercises */
+.exercises-hero{
+    background-color: #172333;
+    padding: 4rem 0;
+}
+.cont-exercises-hero{
+    justify-content: space-between;
+}
+.exercises-hero h2{
+    font-weight: 700;
+    font-size: 3.8rem;
+    color: white;
+}
+.exercises-hero p{
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #888D93;
+    margin-top: 1.5rem;
+}
+.exercises-left{
+    max-width: 45%;
+}
+.list-exercises{
+    background-color: #E6E6EE;
+    padding: 4rem 0;
+}
+.cont-list-exercises h3{
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: #172333;
+}
+.exercises-card{
+    width: 265px;
+    height: 205px;
+    background-color: #F4FAFB;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2rem;
+    margin: 0 2rem 2rem 0;
+    cursor: pointer;
+}
+.exercises-card h4{
+    color: #172333;
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin: 1rem 0;
+}
+.exercises-card p{
+    color: #172333;
+    font-size: 1.6rem;
+}
+.group-exercises{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.info-test{
+    height: 100vh;
+    justify-content: center;
+}
+.info-test p{
+    margin: 2rem 0;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #303C42;
+}
+.group-test{
+    height: 100vh;
+    background-color: #FFCE66;
+    justify-content: center;
+}
+.group-test.two{
+    background-color: #0E1420;
+}
+.group-test h2{
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: white;
+}
+.group-test p{
+    font-size: 1.8rem;
+    color: white;
+}
+.group-test.on{
+    background-color: royalblue;
+}
+
+.number-letter{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+.number-letter h3{
+    font-weight: 700;
+    font-size: 3rem;
+    color: #0E1420;
+}
+.number-number{
+    border: 3px solid white;
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.number-number.ONE{
+    background-image: url(../images/one.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.TWO{
+    background-image: url(../images/two.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.THREE{
+    background-image: url(../images/three.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.FOUR{
+    background-image: url(../images/four.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.FIVE{
+    background-image: url(../images/five.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.SIX{
+    background-image: url(../images/six.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.SEVEN{
+    background-image: url(../images/seven.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.EIGHT{
+    background-image: url(../images/eight.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.NINE{
+    background-image: url(../images/nine.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.TEN{
+    background-image: url(../images/ten.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.ELEVEN{
+    background-image: url(../images/eleven.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.TWELVE{
+    background-image: url(../images/twelve.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.THIRTEEN{
+    background-image: url(../images/thirteen.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.FOURTEEN{
+    background-image: url(../images/fourteen.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.FIFTEEN{
+    background-image: url(../images/fifteen.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.SIXTEEN{
+    background-image: url(../images/sixteen.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.number-number.BLACK{
+    background-image: url(../images/black.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.BLUE{
+    background-image: url(../images/blue.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.GRAY{
+    background-image: url(../images/gray.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.GREEN{
+    background-image: url(../images/green.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.ORANGE{
+    background-image: url(../images/orange.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.PINK{
+    background-image: url(../images/pink.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.PURPLE{
+    background-image: url(../images/purple.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.RED{
+    background-image: url(../images/red.png);
+    background-position: center;
+    background-size: cover;
+}
+.number-number.YELLOW{
+    background-image: url(../images/yellow.png);
+    background-position: center;
+    background-size: cover;
+}
+.after-feed{
+    justify-content: center;
+    margin-top: 3rem;
+}
+.feed-text{
+    margin-bottom: 3rem;
+}
+.c{
+    font-size: 4.8rem;
+    font-weight: 700;
+    background-color: white;
+    width: 40%;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.c.BLUE{
+    color: blue;
+}
+.c.GRAY{
+    color: gray;
+}
+.c.GREEN{
+    color: green;
+}
+.c.ORANGE{
+    color: orange;
+}
+.c.PINK{
+    color: pink;
+}
+.c.PURPLE{
+    color: purple;
+}
+.c.RED{
+    color: RED;
+}
+
+.capture{
+    border: 3px solid white;
+    width: 15rem;
+    height: 15rem;
+    cursor: pointer;
+}
+.capture.on{
+    background-color: green;
+}
+
+.shape{
+    width: 25rem;
+    height: 25rem;
+}
+.shape.triangle{
+    background-image: url(../images/triangle.png);
+}
+.shape.square{
+    background-image: url(../images/square.png);
+}
+.shape.rectangle{
+    background-image: url(../images/rectangle.png);
+}
+.shape.circle{
+    background-image: url(../images/circle.png);
+}
+.shape.rhomb{
+    background-image: url(../images/rhomb.png);
+}
+.shape.parallelogram{
+    background-image: url(../images/parallelogram.png);
+}
+.shape.trapeze{
+    background-image: url(../images/trapeze.png);
+}
+.group-shapes{
+    width: 45%;
+    justify-content: space-between;
+}
+
+.schulte h3{
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.box-memory{
+    background-color: #37BC7A;
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+.box-memory.memory{
+    background-color: #FF9878;
+}
+.box-memory.back{
+    background-color: #37BC7A;
+}
+
+.group-line{
+    align-items: flex-end;
+}
+.line{
+    color: white;
+    background-color: white;
+    width: 3rem;
+    margin: 0 1rem;
+}
+.line.s{
+    height: 15rem;
+}
+.line.m{
+    height: 18rem;
+}
+.line.l{
+    height: 24rem;
+}
+.line.xl{
+    height: 25.5rem;
+}
+.line.xx{
+    height: 26.5rem;
+}
+
+.group-time{
+    width: 15rem;
+    height: 15rem;
+    border: 3px solid white;
+    justify-content: center;
+}
+.group-time h4{
+    font-size: 2.8rem;
+    color: white;
+    font-weight: 500;
+}
+.group-time h3{
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+
+.group-lyric{
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+.group-lyric p{
+    margin: 0 0.3rem;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #303C42;
+}
+.group-lyric p.green{
+    color: green;
+}
+.group-lyric p.red{
+    color: red;
+}
+.group-lyric p.focus{
+    background-color: #E6E6EE;
+}
+
+.field{
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    max-height: 700px;
+    border: 3px solid white;
+}
+.target{
+    background-color: deepskyblue;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    transform:  translateX(490px) translateY(290px);
+}
+
+.grid{
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    max-height: 700px;
+    background-color: lightblue;
+}
+
+.box-impostor{
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid white;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.box-impostor.false{
+    background-image: url(../images/up.png);
+}
+.box-impostor.true{
+    background-image: url(../images/down.png);
+}
+.box-impostor.find{
+    border: 2px solid #0E1420;
+    background-image: none;
+    background-color: #0E1420;
+}
+.group-light{
+    border: 2px solid white;
+    padding: 2rem;
+}
+.light-red{
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    border: 2px solid white;
+    margin: 0 1rem;
+    background-color: red;
+}
+.light-red.ready{
+    background-color: #0E1420;
+}
+.light-green{
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    border: 2px solid white;
+    margin: 1rem 1rem 0 1rem;
+}
+.light-green.ready{
+    background-color: seagreen;
+}
+
+.summary{
+    background-color: #E6E6EE;
+    padding: 4rem;
+}
+.summary h3{
+    color: #172333;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+.kind-card{
+    width: 33rem;
+    height: 9.2rem;
+    border-radius: 13px;
+    color: #172333;
+    margin: 3rem 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10rem;
+    
+}
+.kind-card.on{
+    color: white;
+    background-color: #172333;
+}
+.kind-card h4{
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.kind-card.brain{
+    background-image: url(../images/brain2.png);
+    background-position: center;
+    background-size: cover;
+}
+.kind-card.on.brain{
+    background-image: url(../images/brain.png);
+    background-position: center;
+    background-size: cover;
+}
+.kind-card.eye{
+    background-image: url(../images/eye2.png);
+    background-position: center;
+    background-size: cover;
+}
+.kind-card.on.eye{
+    background-image: url(../images/eye.png);
+    background-position: center;
+    background-size: cover;
+}
+.kind-card.speed{
+    background-image: url(../images/speed2.png);
+    background-position: center;
+    background-size: cover;
+}
+.kind-card.on.speed{
+    background-image: url(../images/speed.png);
+    background-position: center;
+    background-size: cover;
+}
+.egg{
+    width: 33rem;
+    border-radius: 13px;
+}
+.cont-summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.summary-left{
+    max-width: 50%;
+}
+.go-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    margin: 2.5rem 0 0 4rem;
+}
+
+.popup{
+    color: #4E4E4E;
+    box-shadow: 11px 13px 27px -10px rgba(0,0,0,0.75);
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    background-color: white;
+    z-index: 10;
+    padding: 1.5rem;
+    transition: top 1s ease-in-out;
+}
+.popup.on{
+    top: 50%;
+}
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 4;
+    transition: 0.5s ease-in-out;
+    pointer-events: none;
+}
+#overlay.on{
+    opacity: 1;
+    pointer-events: all;
+}
+.popup form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.popup form img{
+    cursor: pointer;
+    display: none;
+}
+.popup form input[type=text]{
+    border: 1px solid #888D93;
+    border-radius: 1rem;
+    outline: none;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1.5rem;
+}
+.bt{
+    background-color: #FB7C03;
+    color: white;
+    border: none;
+    padding: 0.6rem 2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.line-bt{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu-lb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    width: 20vw;
+}
+.menu-lb img{
+    width: 2.5rem;
+}
+.cont-lb{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #172333;
+}
+.op-lb{
+    display: flex;
+    align-items: center;
+    margin: 0.7rem 0;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    width: 100%;
+}
+.op-lb.on{
+    background-color: #f0f9ff;
+}
+.op-lb hr{
+    width: 5px;
+    height: 100%;
+    border: none;
+    margin: 0 3rem 0 0;
+}
+.op-lb p{
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.right-lb{
+    background-color: #E6E6EE;
+    width: 80vw;
+    padding: 4rem;
+}
+.top-card{
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.top-card h3{
+    margin: 0 2rem;
+}
+.top-3{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+.leader-card{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+.leader-card h3{
+    margin: 0 2rem;
+}
+.line-bts button{
+    margin: 0 0.5rem;
+    border: none;
+    padding: 0.5rem;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .mobile{
+        display: block;
+        height: 100vh;
+        background-color: #0E1420;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile p{
+        color: white;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    #root{
+        display: none;
+    }
+}
