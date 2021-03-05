@@ -6,7 +6,7 @@
 
 [![Author](https://img.shields.io/badge/author-JuanGabriel-27DDF2?style=flat-square)](https://github.com/JuanGabrielTL)
 [![Technologies](https://img.shields.io/badge/Technologies-6-27DDF2?style=flat-square)](#)
-[![Contributors](https://img.shields.io/badge/Contributors-2-27DDF2?style=flat-square)](#)
+[![Contributors](https://img.shields.io/badge/Contributors-2-27DDF2?style=flat-square)](https://github.com/JuanGabrielTL/Aim-Max/graphs/contributors)
 
 > Master your aim in videogames through brain games and cognitive tests.
 
@@ -95,7 +95,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 **Question:** What are the technologies used in this project?
 
-**Answer:** The tecnologies used in this project are [NodeJS](https://nodejs.org/en/) + [Express Framework](http://expressjs.com/en/) to handle the server, [React](https://es.reactjs.org/) to build user interfaces and interactivity & [Mongoose](https://mongoosejs.com/) to save the names and scores of the players, as well as to build the leadeboard.
+**Answer:** The tecnologies used in this project are [NodeJS](https://nodejs.org/en/) + [Express Framework](http://expressjs.com/en/) to handle the server, [React](https://es.reactjs.org/) to build user interfaces and interactivity & [MongoDB](https://www.mongodb.com/) to save the names and scores of the players, as well as to build the leadeboard.
 ##
 
 **Question:** Are all types of users able to play and save their scores?
@@ -105,7 +105,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 # :bug: Issues
 
-Feel free to **file a new issue** with a respective title and description on the the [Aim-Max](https://github.com/JuanGabrielTL/Aim-Max/pulls) repository. If you already found a solution to your problem, **i would love to review your pull request**!
+Feel free to **file a new issue** with a respective title and description on the the [Aim-Max](https://github.com/JuanGabrielTL/Aim-Max/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
 
 # :closed_book: License
 
